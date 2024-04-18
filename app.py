@@ -37,7 +37,7 @@ def recommend(book_name):
 
     selected_book = popular_df[popular_df['Book-Title'] == book_name].iloc[0].to_dict()
 
-    return render_template('recommend.html',
+    return render_template('recommended.html',
                            book_name=book_name,
                            selected_book=selected_book,
                            data=data
